@@ -465,4 +465,599 @@
       .about-grid {
         gap: 30px;
       }
-  
+    }
+
+    @media (max-width: 760px) {
+      .navbar {
+        min-height: 70px;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--green);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 5%;
+        gap: 16px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hero {
+        min-height: 570px;
+      }
+
+      .hero-content {
+        padding: 75px 0;
+      }
+
+      .btn-outline {
+        margin: 12px 0 0;
+      }
+
+      .about-grid,
+      .project-box,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image {
+        min-height: 280px;
+      }
+
+      .highlight-grid,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .project-box,
+      .investor-box {
+        padding: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container navbar">
+
+    <a href="#home" class="logo">
+      SONAYRA
+      <span>PRIVATE LIMITED</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">
+      ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#biodiesel">Biodiesel</a></li>
+      <li><a href="#raw-materials">Raw Materials</a></li>
+      <li><a href="#project">Our Project</a></li>
+      <li><a href="#technology">Technology</a></li>
+      <li><a href="#sustainability">Sustainability</a></li>
+      <li><a href="#investors">Investors</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="eyebrow">Sustainable Energy • Responsible Growth</div>
+
+        <h1>SONAYRA <span>PRIVATE LIMITED</span></h1>
+
+        <h2>Driving a Greener Future.</h2>
+
+        <p>
+          Building a sustainable energy future through our proposed
+          biodiesel manufacturing project. Our vision is to contribute
+          towards cleaner fuel alternatives and responsible resource use.
+        </p>
+
+        <a href="#project" class="btn">Explore Our Project</a>
+        <a href="#contact" class="btn btn-outline">Business Enquiry</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-grid">
+
+      <div class="about-image"></div>
+
+      <div class="about-text">
+        <div class="eyebrow">Who We Are</div>
+
+        <h2>Building Tomorrow's Energy Responsibly</h2>
+
+        <p>
+          SONAYRA PRIVATE LIMITED is being developed with a vision
+          to enter the renewable and alternative energy sector through
+          biodiesel manufacturing.
+        </p>
+
+        <p>
+          Our proposed project focuses on exploring suitable feedstocks,
+          responsible manufacturing practices and quality-oriented
+          production systems.
+        </p>
+
+        <p>
+          We believe that sustainable industrial development can play
+          an important role in supporting a cleaner energy future.
+        </p>
+
+        <a href="#contact" class="btn">Connect With Us</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <div class="highlight">
+    <div class="container highlight-grid">
+
+      <div class="highlight-card">
+        <h3>30 KLPD</h3>
+        <p>Proposed Manufacturing Capacity</p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Upcoming</h3>
+        <p>Project Development Stage</p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Green Energy</h3>
+        <p>Focus on Sustainable Fuel Solutions</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BIODIESEL -->
+  <section id="biodiesel">
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">Our Business Focus</div>
+        <h2>Biodiesel Manufacturing</h2>
+
+        <p>
+          Biodiesel is a renewable fuel that can be produced from
+          suitable oils and fats through an appropriate processing
+          method. Our proposed project is focused on this sector.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">🌱</div>
+          <h3>Renewable Fuel</h3>
+          <p>
+            Exploring renewable feedstocks for the production of
+            alternative fuel solutions.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">♻️</div>
+          <h3>Resource Recovery</h3>
+          <p>
+            Potential use of suitable waste oils and other approved
+            feedstocks as manufacturing inputs.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">⚙️</div>
+          <h3>Industrial Development</h3>
+          <p>
+            Planning a manufacturing facility with an emphasis on
+            process efficiency and quality management.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RAW MATERIALS -->
+  <section id="raw-materials" class="highlight">
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">Potential Feedstocks</div>
+        <h2>Raw Materials</h2>
+
+        <p>
+          The final selection of raw materials will depend on
+          technical suitability, availability and applicable
+          regulatory requirements.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">🛢️</div>
+          <h3>Used Cooking Oil</h3>
+          <p>
+            Used cooking oil collected through suitable and
+            compliant sourcing channels.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🌿</div>
+          <h3>Non-Edible Oils</h3>
+          <p>
+            Potential non-edible oil feedstocks, subject to
+            technical evaluation and suitability.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">♻️</div>
+          <h3>Waste Oils & Fats</h3>
+          <p>
+            Other suitable waste oils and fats, subject to
+            processing requirements and applicable approvals.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section id="project">
+    <div class="container">
+
+      <div class="project-box">
+
+        <div>
+          <div class="eyebrow">Project Overview</div>
+
+          <h2>Our Upcoming Biodiesel Plant</h2>
+
+          <p>
+            SONAYRA PRIVATE LIMITED is planning a biodiesel
+            manufacturing project with a proposed production
+            capacity of 30,000 litres per day.
+          </p>
+
+          <p style="margin-top:15px;">
+            The project is currently at the development and
+            planning stage. Plant location, commissioning
+            schedule and other project details will be announced
+            after confirmation.
+          </p>
+        </div>
+
+        <div class="capacity">
+          <strong>30 KLPD</strong>
+          <span>Proposed Capacity</span>
+          <br><br>
+          <span>30,000 Litres Per Day</span>
+          <br><br>
+          <span>Project Status: Upcoming</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY -->
+  <section id="technology" class="dark-section">
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">Manufacturing Approach</div>
+        <h2>Technology & Quality Focus</h2>
+
+        <p>
+          Our proposed manufacturing approach will focus on
+          suitable processing technology, operational planning
+          and quality-oriented production.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">🔬</div>
+          <h3>Process Planning</h3>
+          <p>
+            Evaluating appropriate manufacturing processes
+            according to selected feedstocks.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏭</div>
+          <h3>Plant Infrastructure</h3>
+          <p>
+            Planning suitable plant infrastructure and
+            equipment for the proposed capacity.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">✓</div>
+          <h3>Quality Standards</h3>
+          <p>
+            Working towards applicable product quality
+            standards and regulatory compliance.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUSTAINABILITY -->
+  <section id="sustainability">
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">Our Vision</div>
+        <h2>Committed to a Greener Future</h2>
+
+        <p>
+          We aim to build a business model that considers
+          environmental responsibility alongside industrial growth.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">🌍</div>
+          <h3>Environmental Responsibility</h3>
+          <p>
+            Promoting responsible practices in the development
+            of alternative fuel manufacturing.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🔄</div>
+          <h3>Waste Utilisation</h3>
+          <p>
+            Exploring opportunities to utilise suitable waste
+            resources as manufacturing feedstocks.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🤝</div>
+          <h3>Responsible Partnerships</h3>
+          <p>
+            Building relationships with suppliers, customers
+            and business partners for long-term development.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INVESTORS -->
+  <section id="investors" class="highlight">
+    <div class="container">
+
+      <div class="investor-box">
+
+        <div class="eyebrow">Investment & Collaboration</div>
+
+        <h2>Grow With Our Vision</h2>
+
+        <p>
+          SONAYRA PRIVATE LIMITED welcomes enquiries from
+          interested investors, business associates, raw material
+          suppliers and strategic partners who wish to explore
+          potential collaboration opportunities in the biodiesel
+          manufacturing sector.
+        </p>
+
+        <p>
+          All investment proposals and partnership opportunities
+          will be subject to discussion, due diligence and mutually
+          agreed terms. No fixed or guaranteed returns are offered.
+        </p>
+
+        <a href="#contact" class="btn">Submit Your Enquiry</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">Get In Touch</div>
+        <h2>Contact SONAYRA</h2>
+
+        <p>
+          For business enquiries, investment discussions,
+          supply opportunities and strategic partnerships,
+          please contact us.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+
+          <p>
+            <strong>Company:</strong><br>
+            SONAYRA PRIVATE LIMITED
+          </p>
+
+          <p>
+            <strong>Business:</strong><br>
+            Proposed Biodiesel Manufacturing
+          </p>
+
+          <p>
+            <strong>Project Capacity:</strong><br>
+            30 KLPD (Proposed)
+          </p>
+
+          <p>
+            <strong>Project Status:</strong><br>
+            Upcoming
+          </p>
+
+          <p>
+            Official contact details and registered office
+            information will be published after confirmation.
+          </p>
+        </div>
+
+        <div class="contact-form">
+          <h3>Business Enquiry</h3>
+
+          <form id="enquiryForm">
+
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              required
+            >
+
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email Address"
+              required
+            >
+
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Your Contact Number"
+            >
+
+            <select id="subject" required>
+              <option value="">Select Enquiry Type</option>
+              <option>Investment Enquiry</option>
+              <option>Business Partnership</option>
+              <option>Raw Material Supply</option>
+              <option>Product Enquiry</option>
+              <option>Other</option>
+            </select>
+
+            <textarea
+              id="message"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+
+            <button type="submit" class="btn submit-btn">
+              Submit Enquiry
+            </button>
+
+            <p id="formMessage" style="margin-top:12px;font-size:13px;"></p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+
+    <div class="logo">
+      SONAYRA
+      <span>PRIVATE LIMITED</span>
+    </div>
+
+    <p>Driving a Greener Future.</p>
+
+    <p>
+      © <span id="year"></span> SONAYRA PRIVATE LIMITED.
+      All Rights Reserved.
+    </p>
+
+    <p class="disclaimer">
+      Project information presented on this website is indicative
+      and subject to change. The proposed manufacturing facility
+      is not represented as operational.
+    </p>
+
+  </div>
+</footer>
+
+<script>
+  // Mobile navigation
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
+
+  menuBtn.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+  });
+
+  // Close mobile menu after selecting a link
+  document.querySelectorAll(".nav-links a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      navLinks.classList.remove("active");
+    });
+  });
+
+  // Footer year
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+  // Demo enquiry form
+  document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("formMessage").textContent =
+      "Thank you for your interest. Online enquiry submission will be enabled after email/backend integration.";
+
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
