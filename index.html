@@ -34,4 +34,435 @@
 
     body {
       font-family: 'DM Sans', sans-serif;
-      color
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1160px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: var(--green);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 18px rgba(0,0,0,.15);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--gold);
+    }
+
+    .logo span {
+      display: block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 9px;
+      letter-spacing: 3px;
+      color: white;
+      font-weight: 500;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      list-style: none;
+      font-size: 13px;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .menu-btn {
+      display: none;
+      border: 1px solid var(--gold);
+      background: transparent;
+      color: white;
+      font-size: 24px;
+      padding: 3px 10px;
+      cursor: pointer;
+    }
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(4,30,24,.94), rgba(4,30,24,.65)),
+        url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=2000&q=85')
+        center/cover;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 100px 0;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.2;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 7vw, 72px);
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero h2 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: clamp(20px, 3vw, 27px);
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #e2e9e5;
+      max-width: 650px;
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 25px;
+      background: var(--gold);
+      color: var(--green);
+      font-weight: 700;
+      border-radius: 3px;
+      transition: .25s;
+    }
+
+    .btn:hover {
+      background: white;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 1px solid var(--gold);
+      margin-left: 10px;
+    }
+
+    section {
+      padding: 85px 0;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin: 0 auto 45px;
+      text-align: center;
+    }
+
+    .section-heading .eyebrow {
+      margin-bottom: 12px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 42px);
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .about-image {
+      min-height: 390px;
+      background:
+        url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1100&q=85')
+        center/cover;
+      border-radius: 5px;
+    }
+
+    .about-text h2 {
+      font-size: 38px;
+      color: var(--green);
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      background: var(--cream);
+      padding: 65px 0;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .highlight-card {
+      background: white;
+      text-align: center;
+      padding: 35px 20px;
+      border-bottom: 3px solid var(--gold);
+      box-shadow: 0 5px 25px rgba(0,0,0,.05);
+    }
+
+    .highlight-card h3 {
+      color: var(--green);
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .highlight-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      padding: 30px;
+      background: var(--cream);
+      border-radius: 4px;
+      border-top: 3px solid var(--gold);
+    }
+
+    .card .icon {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: var(--green);
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .dark-section {
+      background: var(--green);
+      color: white;
+    }
+
+    .dark-section .section-heading h2 {
+      color: white;
+    }
+
+    .dark-section .section-heading p {
+      color: #d0ddd7;
+    }
+
+    .dark-section .card {
+      background: var(--green-light);
+      border-color: var(--gold);
+    }
+
+    .dark-section .card h3 {
+      color: var(--gold);
+    }
+
+    .dark-section .card p {
+      color: #e0e9e4;
+    }
+
+    .project-box {
+      background: var(--cream);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 35px;
+      padding: 45px;
+      border-left: 5px solid var(--gold);
+    }
+
+    .project-box h2 {
+      color: var(--green);
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .project-box p {
+      color: var(--muted);
+    }
+
+    .capacity {
+      text-align: center;
+      background: var(--green);
+      color: white;
+      padding: 35px 20px;
+      border-radius: 4px;
+    }
+
+    .capacity strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 52px;
+      color: var(--gold);
+    }
+
+    .capacity span {
+      font-size: 14px;
+    }
+
+    .investor-box {
+      background: var(--cream);
+      padding: 45px;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    .investor-box h2 {
+      color: var(--green);
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .investor-box p {
+      color: var(--muted);
+      max-width: 800px;
+      margin: 0 auto 25px;
+    }
+
+    .contact {
+      background: var(--cream);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+    }
+
+    .contact-info {
+      background: var(--green);
+      color: white;
+      padding: 35px;
+    }
+
+    .contact-info h3 {
+      color: var(--gold);
+      font-size: 27px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin-bottom: 15px;
+      color: #e0e9e4;
+    }
+
+    .contact-form {
+      background: white;
+      padding: 35px;
+    }
+
+    .contact-form h3 {
+      color: var(--green);
+      font-size: 27px;
+      margin-bottom: 20px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 13px;
+      margin-bottom: 15px;
+      border: 1px solid #d8dfda;
+      font-family: inherit;
+      font-size: 14px;
+      border-radius: 3px;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button.submit-btn {
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 15px;
+    }
+
+    footer {
+      background: #061e19;
+      color: white;
+      padding: 35px 0;
+      text-align: center;
+    }
+
+    footer .logo {
+      margin-bottom: 12px;
+    }
+
+    footer p {
+      color: #bdcbc4;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+      color: #8d9a93;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .nav-links {
+        gap: 12px;
+        font-size: 12px;
+      }
+
+      .about-grid {
+        gap: 30px;
+      }
+  
