@@ -277,6 +277,42 @@ footer a{color:var(--gold)}
  .investor h2{font-size:28px}
  .btn-outline{margin:12px 0 0}
 }
+
+@media(max-width:900px){
+  header .navbar{
+    position:relative;
+  }
+
+  header nav{
+    display:none;
+    position:absolute;
+    top:78px;
+    left:0;
+    width:100%;
+    background:#09291f;
+    padding:20px;
+    flex-direction:column;
+    align-items:flex-start;
+    z-index:9999;
+  }
+
+  header nav.active{
+    display:flex !important;
+  }
+
+  header nav a{
+    display:block;
+    width:100%;
+    padding:10px 0;
+  }
+
+  .menu-btn{
+    display:block;
+    cursor:pointer;
+    padding:8px;
+  }
+}
+ 
 </style>
 </head>
 
@@ -288,8 +324,10 @@ footer a{color:var(--gold)}
    <small>PRIVATE LIMITED</small>
   </a>
 
-  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">☰</button>
-
+  <button type="button" class="menu-btn" id="menuToggle"
+aria-label="Open navigation" aria-expanded="false">
+☰
+</button>
   <nav id="navigation">
    <a href="#home" onclick="closeMenu()">Home</a>
    <a href="#about" onclick="closeMenu()">About Us</a>
